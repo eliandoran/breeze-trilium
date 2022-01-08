@@ -131,45 +131,12 @@ body:focus-within {
     color: #a3a3a5;
 }
 
-div.tab-row-widget {
-    --main-background-color: #26292c;
-}
-
 body .CodeMirror {
     filter: invert(100%) hue-rotate(180deg);
 }
 
-.tab-row-widget-container {
-    border-bottom: 0;
-}
-
-.tab-row-widget .note-tab .note-tab-wrapper {
-    position: relative;
-    border-top-color: transparent;
-    border-bottom-color: var(--main-background-color);
-    border: 1px solid #5f6265;
-    border-radius: 3px !important;
-    transform: translateY(6px);
-}
-
-#rest-pane > .component:first-of-type {
-    border-bottom: 1px solid #5f6265;
-}
-
 .global-menu .global-menu-button {
     filter: invert(1);
-}
-
-.tab-row-widget .note-tab[active] .note-tab-wrapper:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 3px;
-    right: 0;
-    background: var(--accent-color);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
 }
 
 /*
@@ -268,6 +235,60 @@ span.fancytree-node:not(.fancytree-loading) .fancytree-expander:before {
 }
 
 .tooltip {
+}
+
+/*
+ * Tab
+ */
+div.tab-row-widget {
+    --main-background-color: #26292c;
+}
+
+.tab-row-widget-container {
+    border-bottom: 0;
+    padding-top: 1px;
+}
+
+.tab-row-widget .note-tab .note-tab-wrapper {
+    position: relative;
+    border: 1px solid #5f6265;
+    border-radius: 3px 3px 0 0 !important;
+    background-color: var(--main-background-color);
+    height: 31px !important;
+}
+
+.tab-row-widget .note-tab[active] .note-tab-wrapper {
+    border-bottom-color: transparent;
+}
+
+.tab-row-widget .note-tab[active] .note-tab-wrapper:before {
+    /*content: "";*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    right: 0;
+    background: var(--accent-color);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#rest-pane > .component:first-of-type {
+    height: 31px !important;
+}
+
+.tab-row-widget .tab-row-widget-container {
+    position: relative;
+}
+
+.tab-row-widget .tab-row-widget-container:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #5f6265;
 }
 
 /*
