@@ -230,6 +230,19 @@ span.fancytree-node:not(.fancytree-loading) .fancytree-expander:before {
 }
 
 /*
+ * Quick search
+ */
+.quick-search {
+    height: 31px !important;
+    padding: 0 !important;
+}
+
+.quick-search input {
+    height: 30px !important;
+    background: transparent !important;
+}
+
+/*
  * Tooltip
  */
 :root {
