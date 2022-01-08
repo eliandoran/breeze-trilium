@@ -33,6 +33,27 @@
     --tooltip-background-color: #31363b;
 }
 
+/*
+ * Custom toolbar
+ */
+#root-widget {
+    flex-wrap: wrap;
+}
+
+#launcher-pane {
+    flex-direction: row !important;
+    width: 100% !important;
+    height: 53px;
+}
+
+#display-pane {
+
+}
+
+#rest-pane {
+
+}
+
 ::-webkit-scrollbar-thumb {
     background: #31363b !important;
     border-color: #808284 !important;
