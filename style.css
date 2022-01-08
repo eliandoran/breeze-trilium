@@ -1,4 +1,7 @@
 :root {
+    --breeze-window-title-active-background-color: #31363b;
+    --breeze-window-title-inactive-background-color: #2a2e32;
+
     --accent-color: #3daee9;
 
     --main-text-color: #fcfcfc;
@@ -13,8 +16,7 @@
     --active-item-text-color: var(--left-pane-text-color);
     --active-item-background-color: #3daee9;
 
-    --launcher-pane-background-color: var(--left-pane-background-color);
-    /*--launcher-pane-background-color: #31363b;*/
+    --launcher-pane-background-color: var(--breeze-window-title-inactive-background-color);
     --launcher-pane-text-color: var(--left-pane-text-color);
 
     --active-tab-background-color: var(--main-background-color);
@@ -31,6 +33,10 @@
 
     --main-border-color: #3f4246;
     --tooltip-background-color: #31363b;
+}
+
+body:focus-within {
+    --launcher-pane-background-color: var(--breeze-window-title-active-background-color);
 }
 
 /*
