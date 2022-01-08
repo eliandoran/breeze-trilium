@@ -5,6 +5,7 @@
     --breeze-separator-dim-color: #3f4246;
     --breeze-toolbutton-selected-background-color: #4b4f54;
     --breeze-toolbutton-selected-border-color: #6e7175;
+    --breeze-toolbutton-destructive-background-color: #823943;
 
     --main-font-family: "Noto Sans", sans-serif;
     --main-font-size: 10pt;
@@ -245,13 +246,19 @@ div.tab-row-widget {
 }
 
 #rest-pane > .component:first-of-type {
+    position: relative;
     height: 31px !important;
-    transform: translateX(-4px);
+    left: -4px;
+    width: calc(100% + 4px);
 }
 
 .tab-row-widget-container {
     border-bottom: 0;
     padding-top: 1px;
+}
+
+.tab-row-widget .note-tab:first-of-type {
+    margin-left: 4px;
 }
 
 .tab-row-widget .note-tab .note-tab-wrapper {
@@ -260,15 +267,12 @@ div.tab-row-widget {
     border-radius: 3px 3px 0 0 !important;
     background-color: var(--main-background-color);
     height: 31px !important;
-    padding-left: 4px;
-}
-
-.tab-row-widget .note-tab:first-of-type {
-    margin-left: 4px;
+    padding: 0 8px !important;
 }
 
 .tab-row-widget .note-tab[active] .note-tab-wrapper {
     border-bottom-color: transparent;
+    line-height: 30px;
 }
 
 .tab-row-widget .note-tab[active] .note-tab-wrapper:before {
@@ -281,6 +285,27 @@ div.tab-row-widget {
     background: var(--accent-color);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+}
+
+.tab-row-widget .note-tab .note-tab-wrapper .note-tab-close {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: #939597;
+    line-height: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tab-row-widget .note-tab .note-tab-wrapper .note-tab-close:hover {
+    background-color: var(--breeze-toolbutton-destructive-background-color);
+}
+
+.tab-row-widget .note-tab .note-tab-wrapper .note-tab-close span {
+    line-height: 16px;
+    font-size: 18px;
+    color: var(--main-background-color);
+    top: 0 !important;
 }
 
 .tab-row-widget .tab-row-widget-container {
