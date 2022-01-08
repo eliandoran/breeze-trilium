@@ -271,7 +271,8 @@ div.tab-row-widget:before {
 
 .tab-row-widget .note-tab .note-tab-wrapper {
     position: relative;
-    border: 1px solid #5f6265;
+    border: 1px solid transparent;
+    border-bottom-color: #5f6265;
     border-radius: 3px 3px 0 0 !important;
     background-color: var(--main-background-color);
     height: 30px !important;
@@ -281,7 +282,8 @@ div.tab-row-widget:before {
 }
 
 .tab-row-widget .note-tab[active] .note-tab-wrapper {
-    border-bottom-color: transparent;
+    border: 1px solid #5f6265;
+    border-bottom-color: var(--active-tab-background-color);
     overflow: visible;
 }
 
