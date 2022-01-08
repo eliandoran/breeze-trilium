@@ -1,12 +1,16 @@
 :root {
+    --breeze-window-default-background-color: #2a2e32;
     --breeze-window-title-active-background-color: #31363b;
-    --breeze-window-title-inactive-background-color: #2a2e32;
+    --breeze-window-title-inactive-background-color: var(--breeze-window-default-background-color);
     --breeze-separator-accent-color: #64686b;
     --breeze-separator-dim-color: #3f4246;
     --breeze-toolbutton-selected-background-color: #4b4f54;
     --breeze-toolbutton-selected-border-color: #6e7175;
     --breeze-toolbutton-destructive-background-color: #823943;
     --breeze-link-color: #1d99f3;
+
+    --breeze-dark-background-color: #1b1e20;
+    --breeze-dark-border-color: #535657;
 
     --main-font-family: "Noto Sans", sans-serif;
     --main-font-size: 10pt;
@@ -16,10 +20,15 @@
     --accent-color: #3daee9;
 
     --main-text-color: #fcfcfc;
-    --main-background-color: #2a2e32;
+    --main-background-color: var(--breeze-window-default-background-color);
     --input-text-color: var(--main-text-color);
     --button-text-color: var(--main-text-color);
     --muted-text-color: #939597;
+
+    --modal-background-color: var(--breeze-window-default-background-color);
+    --modal-backdrop-color: black;
+    --menu-text-color: var(--main-text-color);
+    --menu-background-color: var(--modal-background-color);
 
     --link-color: var(--breeze-link-color);
 
@@ -365,4 +374,21 @@ div.tab-row-widget:before {
 .component.note-split > .component:last-of-type:hover,
 .component.note-split > .component:last-of-type:focus-within {
     border-color: var(--accent-color);
+}
+
+.note-list-container {
+    padding: 10px;
+}
+
+.note-book-card {
+    border-radius: 3px !important;
+    border: 1px solid transparent !important;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    margin: 4px 15px 10px 0 !important;
+    --accented-background-color: var(--breeze-window-title-inactive-background-color);
+    --more-accented-background-color: var(--accented-background-color);
+}
+
+.note-book-card:hover {
+    border-color: var(--accent-color) !important;
 }
