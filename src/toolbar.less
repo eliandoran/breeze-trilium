@@ -1,0 +1,103 @@
+/*
+ * Custom toolbar
+ */
+#root-widget {
+    flex-wrap: wrap;
+}
+
+#launcher-pane {
+    flex-direction: row !important;
+    width: 100% !important;
+    height: 46px;
+    border-bottom: 1px solid var(--breeze-separator-accent-color);
+    box-sizing: border-box;
+    padding: 7px 8px !important;
+    --hover-item-background-color: var(--breeze-toolbutton-active-background-color);
+}
+
+body:focus-within {
+    --launcher-pane-background-color: var(--breeze-window-title-active-background-color);
+}
+
+#launcher-pane .spacer {
+    flex: 0 !important;
+    border-left: 1px solid var(--breeze-separator-accent-color);
+    margin: 6px 4px;
+}
+
+#launcher-pane .button-widget,
+#launcher-pane button {
+    border: 1px solid transparent !important;
+    border-radius: 3px;
+    margin: 0 1px;
+    box-sizing: border-box;
+}
+
+#launcher-pane .button-widget:hover,
+#launcher-pane button:hover {
+    border-color: var(--accent-color) !important;
+}
+
+#launcher-pane .icon-action {
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    /* Test border */
+    /*border: 1px solid red !important;*/
+    text-align: center; /* Fix icon horizontal alignment */
+    font-size: 18px !important;
+}
+
+#launcher-pane .icon-action:before {
+    line-height: 32px; /* Fix icon vertical alignment */
+}
+
+#launcher-pane > div.component:not(.dropdown):not(.spacer) {
+    flex-direction: row !important;
+}
+
+#launcher-pane .right-dropdown-widget {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+/*
+ * Launcher: Hamburger menu
+ * moved to right part of the screen.
+ */
+#launcher-pane .button-widget.bx-chevrons-left {
+    display: none;
+}
+
+#launcher-pane .global-menu {
+    order: 1000;
+}
+
+#launcher-pane .global-menu {
+    flex-grow: 1;
+    text-align: right;
+}
+
+#launcher-pane .global-menu-button {
+    background-image: none !important;
+    font-size: 23px !important;
+    width: 32px;
+    height: 32px;
+
+    /* Enable icon support. */
+    font-family: 'boxicons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    color: var(--launcher-pane-text-color) !important;
+}
+
+#launcher-pane .global-menu-button:before {
+    content: "\eac1";
+}

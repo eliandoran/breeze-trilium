@@ -1,0 +1,17 @@
+.component.note-split > .component:last-of-type {
+    --main-background-color: #232629;
+    background: var(--main-background-color);
+    border: 1px solid #5f6265;
+    border-radius: 6px;
+    transition: border-color 250ms ease-in-out;
+    margin: -1px 4px 4px 0;
+}
+
+.component.note-split > .component:last-of-type:hover,
+.component.note-split > .component:last-of-type:focus-within {
+    border-color: var(--accent-color);
+}
+
+body .CodeMirror {
+    filter: invert(100%) hue-rotate(180deg);
+}
