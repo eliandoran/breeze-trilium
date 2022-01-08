@@ -66,14 +66,16 @@ body:focus-within {
     margin: 6px 4px;
 }
 
-#launcher-pane .button-widget {
+#launcher-pane .button-widget,
+#launcher-pane button {
     border: 1px solid transparent !important;
     border-radius: 3px;
     margin: 0 1px;
     box-sizing: border-box;
 }
 
-#launcher-pane .button-widget:hover {
+#launcher-pane .button-widget:hover,
+#launcher-pane button:hover {
     border-color: var(--accent-color) !important;
 }
 
@@ -192,6 +194,48 @@ body .CodeMirror {
     background: var(--accent-color);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+}
+
+/*
+ * Launcher: Hamburger menu
+ * moved to right part of the screen.
+ */
+#launcher-pane .button-widget.bx-chevrons-left {
+    display: none;
+}
+
+#launcher-pane .global-menu {
+    order: 1000;
+}
+
+#launcher-pane .global-menu {
+    flex-grow: 1;
+    text-align: right;
+}
+
+#launcher-pane .global-menu-button {
+    background-image: none !important;
+    font-size: 23px !important;
+    filter: unset !important;
+    width: 32px;
+    height: 32px;
+
+    /* Enable icon support. */
+    font-family: 'boxicons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    color: var(--launcher-pane-text-color) !important;
+}
+
+#launcher-pane .global-menu-button:before {
+    content: "\eac1";
 }
 
 /*
