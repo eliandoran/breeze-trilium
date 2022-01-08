@@ -1,6 +1,10 @@
 :root {
     --breeze-window-title-active-background-color: #31363b;
     --breeze-window-title-inactive-background-color: #2a2e32;
+    --breeze-separator-accent-color: #64686b;
+    --breeze-separator-dim-color: #3f4246;
+    --breeze-toolbutton-selected-background-color: #4b4f54;
+    --breeze-toolbutton-selected-border-color: #6e7175;
 
     --accent-color: #3daee9;
 
@@ -49,7 +53,51 @@ body:focus-within {
 #launcher-pane {
     flex-direction: row !important;
     width: 100% !important;
-    height: 53px;
+    height: 46px;
+    border-bottom: 1px solid var(--breeze-separator-accent-color);
+    box-sizing: border-box;
+    padding: 7px 8px !important;
+    --hover-item-background-color: var(--breeze-toolbutton-active-background-color);
+}
+
+#launcher-pane .spacer {
+    flex: 0 !important;
+    border-left: 1px solid var(--breeze-separator-accent-color);
+    margin: 6px 4px;
+}
+
+#launcher-pane .button-widget {
+    border: 1px solid transparent !important;
+    border-radius: 3px;
+    margin: 0 1px;
+    box-sizing: border-box;
+}
+
+#launcher-pane .button-widget:hover {
+    border-color: var(--accent-color) !important;
+}
+
+#launcher-pane .icon-action {
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    /* Test border */
+    /*border: 1px solid red !important;*/
+    text-align: center; /* Fix icon horizontal alignment */
+    font-size: 18px !important;
+}
+
+#launcher-pane .icon-action:before {
+    line-height: 32px; /* Fix icon vertical alignment */
+}
+
+#launcher-pane > div.component:not(.dropdown):not(.spacer) {
+    flex-direction: row !important;
+}
+
+#launcher-pane .right-dropdown-widget {
+    width: 32px !important;
+    height: 32px !important;
 }
 
 #display-pane {
