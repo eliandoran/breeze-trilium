@@ -217,6 +217,10 @@ body .CodeMirror {
 /*
  * Sidebar
  */
+.tree-wrapper > .tree {
+    padding: 13px 2px 6px 9px;
+}
+
 .gutter {
     background: none !important;
 }
