@@ -6,6 +6,7 @@
     --breeze-toolbutton-selected-background-color: #4b4f54;
     --breeze-toolbutton-selected-border-color: #6e7175;
     --breeze-toolbutton-destructive-background-color: #823943;
+    --breeze-link-color: #1d99f3;
 
     --main-font-family: "Noto Sans", sans-serif;
     --main-font-size: 10pt;
@@ -19,6 +20,8 @@
     --input-text-color: var(--main-text-color);
     --button-text-color: var(--main-text-color);
     --muted-text-color: #939597;
+
+    --link-color: var(--breeze-link-color);
 
     --left-pane-background-color: #2a2e32;
     --left-pane-text-color: var(--main-text-color);
