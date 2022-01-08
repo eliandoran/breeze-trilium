@@ -1,0 +1,146 @@
+:root {
+    --accent-color: #3daee9;
+
+    --main-text-color: #fcfcfc;
+    --main-background-color: #2a2e32;
+    --input-text-color: var(--main-text-color);
+    --button-text-color: var(--main-text-color);
+    --muted-text-color: #939597;
+
+    --left-pane-background-color: #2a2e32;
+    --left-pane-text-color: var(--main-text-color);
+
+    --active-item-text-color: var(--left-pane-text-color);
+    --active-item-background-color: #3daee9;
+
+    --launcher-pane-background-color: var(--left-pane-background-color);
+    /*--launcher-pane-background-color: #31363b;*/
+    --launcher-pane-text-color: var(--left-pane-text-color);
+
+    --active-tab-background-color: var(--main-background-color);
+    --active-tab-text-color: var(--left-pane-text-color);
+    --inactive-tab-background-color: var(--active-tab-background-color);
+    --inactive-tab-text-color: var(--active-tab-text-color);
+
+    --hover-item-background-color: transparent;
+
+    --accented-background-color: #1B1E20;
+    --more-accented-background-color: var(--accented-background-color);
+
+    --mermaid-theme: forest;
+
+    --main-border-color: #3f4246;
+    --tooltip-background-color: #31363b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #31363b !important;
+    border-color: #808284 !important;
+    border-radius: 24px !important;
+}
+
+#launcher-pane {
+    border-right: 1px solid var(--main-border-color);
+}
+
+.gutter {
+    background: none !important;
+}
+
+.gutter.gutter-horizontal {
+    border-left: 1px solid var(--main-border-color);
+}
+
+.quick-search {
+    border-bottom: 1px solid var(--main-border-color);
+}
+
+.fancytree-node {
+    border: 0;
+    border-radius: 0;
+}
+
+span.fancytree-node:hover {
+    background-color: #2e4857;
+    border: 0;
+}
+
+span.fancytree-active {
+    border-radius: 0;
+}
+
+.ui-fancytree ul {
+    padding-left: 10px;
+}
+
+.fancytree-node.fancytree-expanded .fancytree-expander:before,
+.fancytree-node:not(.fancytree-loading) .fancytree-expander:before {
+    color: #a3a3a5;
+}
+
+div.tab-row-widget {
+    --main-background-color: #26292c;
+}
+
+body .CodeMirror {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+.tab-row-widget-container {
+    border-bottom: 0;
+}
+
+.tab-row-widget .note-tab .note-tab-wrapper {
+    position: relative;
+    border-top-color: transparent;
+    border-bottom-color: var(--main-background-color);
+    border: 1px solid #5f6265;
+    border-radius: 3px !important;
+    transform: translateY(6px);
+}
+
+#rest-pane > .component:first-of-type {
+    border-bottom: 1px solid #5f6265;
+}
+
+.global-menu .global-menu-button {
+    filter: invert(1);
+}
+
+.tab-row-widget .note-tab[active] .note-tab-wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    right: 0;
+    background: var(--accent-color);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+/*
+ * Tooltip
+ */
+:root {
+}
+
+.tooltip {
+}
+
+/*
+ * Main editor
+ */
+.component.note-split > .component:last-of-type {
+    --main-background-color: #232629;
+    background: var(--main-background-color);
+    border: 1px solid #5f6265;
+    border-radius: 6px;
+    transition: border-color 250ms ease-in-out;
+    margin: -1px 4px 4px 0;
+}
+
+.component.note-split > .component:last-of-type:hover,
+.component.note-split > .component:last-of-type:focus-within {
+    border-color: var(--accent-color);
+}
