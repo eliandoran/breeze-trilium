@@ -320,6 +320,20 @@ div.tab-row-widget:before {
     top: 0 !important;
 }
 
+.note-new-tab {
+    width: 26px !important;
+    height: 26px !important;
+    border: 1px solid transparent !important;
+    border-radius: 3px !important;
+    line-height: 22px !important;
+    margin: 1px !important;
+}
+
+.note-new-tab:hover {
+    background-color: transparent !important;
+    border-color: var(--accent-color) !important;
+}
+
 /*
  * Main editor
  */
