@@ -1,3 +1,7 @@
+@breeze-toolbar-height: 46px;
+@breeze-transition-default: ease-in-out 200ms;
+@breeze-transition-fast: ease-in-out 100ms;
+
 :root {
     --breeze-window-default-background-color: #2a2e32;
     --breeze-window-title-active-background-color: #31363b;
@@ -11,4 +15,25 @@
 
     --breeze-dark-background-color: #1b1e20;
     --breeze-dark-border-color: #535657;
+}
+
+.icon-button(@size: 32px) {
+    width: @size !important;
+    height: @size !important;
+    padding: 0 !important;
+    text-align: center;
+    font-size: 18px !important;
+    transition: border-color @breeze-transition-fast;
+    border: 1px solid transparent !important;
+    border-radius: 3px;
+    margin: 0 1px;
+    box-sizing: border-box;
+
+    &:before {
+        line-height: @size;
+    }
+
+    &:hover {
+        border-color: var(--accent-color) !important;
+    }
 }

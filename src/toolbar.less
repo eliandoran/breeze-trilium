@@ -1,14 +1,7 @@
-/*
- * Custom toolbar
- */
-#root-widget {
-    flex-wrap: wrap;
-}
-
 #launcher-pane {
     flex-direction: row !important;
     width: 100% !important;
-    height: 46px;
+    height: @breeze-toolbar-height;
     border-bottom: 1px solid var(--breeze-separator-accent-color);
     box-sizing: border-box;
     padding: 7px 8px !important;
@@ -25,31 +18,8 @@ body:focus-within {
     margin: 6px 4px;
 }
 
-#launcher-pane .button-widget,
-#launcher-pane button {
-    border: 1px solid transparent !important;
-    border-radius: 3px;
-    margin: 0 1px;
-    box-sizing: border-box;
-}
-
-#launcher-pane .button-widget:hover,
-#launcher-pane button:hover {
-    border-color: var(--accent-color) !important;
-}
-
 #launcher-pane .icon-action {
-    width: 32px !important;
-    height: 32px !important;
-    padding: 0 !important;
-    /* Test border */
-    /*border: 1px solid red !important;*/
-    text-align: center; /* Fix icon horizontal alignment */
-    font-size: 18px !important;
-}
-
-#launcher-pane .icon-action:before {
-    line-height: 32px; /* Fix icon vertical alignment */
+    .icon-button();
 }
 
 #launcher-pane > div.component:not(.dropdown):not(.spacer) {
