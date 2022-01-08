@@ -244,6 +244,11 @@ div.tab-row-widget {
     --main-background-color: #26292c;
 }
 
+#rest-pane > .component:first-of-type {
+    height: 31px !important;
+    transform: translateX(-4px);
+}
+
 .tab-row-widget-container {
     border-bottom: 0;
     padding-top: 1px;
@@ -255,6 +260,11 @@ div.tab-row-widget {
     border-radius: 3px 3px 0 0 !important;
     background-color: var(--main-background-color);
     height: 31px !important;
+    padding-left: 4px;
+}
+
+.tab-row-widget .note-tab:first-of-type {
+    margin-left: 4px;
 }
 
 .tab-row-widget .note-tab[active] .note-tab-wrapper {
@@ -271,10 +281,6 @@ div.tab-row-widget {
     background: var(--accent-color);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-}
-
-#rest-pane > .component:first-of-type {
-    height: 31px !important;
 }
 
 .tab-row-widget .tab-row-widget-container {
