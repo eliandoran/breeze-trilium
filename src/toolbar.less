@@ -34,28 +34,24 @@ body:focus-within {
         width: 30px;
     }
 
-    .text-button() {
-        display: block;
-        font-family: var(--tree-font-family);
-        font-size: var(--tree-font-size);
-        padding-right: 7px;
+    .text-button(@text) {
+        &:after {
+            content: @text;
+            font-family: var(--tree-font-family);
+            font-size: var(--tree-font-size);
+            padding-right: 7px;
+        }
     }
 
     // Append labels to tool bar items, if they have a corresponding tooltip.
     &[data-original-title=""][title]:not([title=""]):not(.bx-shield-quarter) {
-        &:after {
-            content: attr(title);
-            .text-button();
-        }
+        .text-button(attr(title));
     }
 
     // Some tooltips are changed at some point, rendering them into more verbose tooltips
     // or into keyboard shortcut indications. Fall back to using the original title for those.
     &[data-original-title]:not([data-original-title=""]) {
-        &:after {
-            content: attr(data-original-title);
-            .text-button();
-        }
+        .text-button(attr(data-original-title));
     }
 }
 
