@@ -20,6 +20,32 @@ body:focus-within {
 
 #launcher-pane .icon-action {
     .icon-button();
+    width: auto !important;
+    min-width: 4em;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    &:after {
+        top: 50%;
+        left: 20px;
+        right: 0;
+        content: attr(title);
+        font-family: var(--tree-font-family);
+        font-size: var(--tree-font-size);
+        transform: translateY(-50%);
+        display: inline-block;
+        white-space: nowrap;
+        position: absolute;
+        text-overflow: ellipsis;
+    }
 }
 
 #launcher-pane .sync-status {
