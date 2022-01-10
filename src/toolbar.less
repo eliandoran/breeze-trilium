@@ -30,12 +30,22 @@ body:focus-within {
         line-height: 30px;
     }
 
-    &:after {
-        content: attr(title);
+    &:before {
+        width: 30px;
+    }
+
+    .text-button() {
         display: block;
         font-family: var(--tree-font-family);
         font-size: var(--tree-font-size);
-        margin-left: 2px;
+        padding-right: 7px;
+    }
+
+    &[title]:not([title=""]) {
+        &:after {
+            content: attr(title);
+            .text-button();
+        }
     }
 }
 
