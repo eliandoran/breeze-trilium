@@ -41,9 +41,19 @@ body:focus-within {
         padding-right: 7px;
     }
 
-    &[title]:not([title=""]) {
+    // Append labels to tool bar items, if they have a corresponding tooltip.
+    &[data-original-title=""][title]:not([title=""]):not(.bx-shield-quarter) {
         &:after {
             content: attr(title);
+            .text-button();
+        }
+    }
+
+    // Some tooltips are changed at some point, rendering them into more verbose tooltips
+    // or into keyboard shortcut indications. Fall back to using the original title for those.
+    &[data-original-title]:not([data-original-title=""]) {
+        &:after {
+            content: attr(data-original-title);
             .text-button();
         }
     }
@@ -62,8 +72,9 @@ body:focus-within {
 }
 
 #launcher-pane .right-dropdown-widget {
-    width: 32px !important;
-    height: 32px !important;
+    width: unset !important;
+    height: unset !important;
+    contain: unset !important;
 }
 
 /*
