@@ -53,6 +53,7 @@ body:focus-within {
     span.sync-status-icon {
         top: 0 !important;
         line-height: 31px;
+        width: 32px;
     }
 }
 
@@ -78,8 +79,16 @@ body:focus-within {
 }
 
 #launcher-pane .global-menu {
-    flex-grow: 1;
+    width: 32px;
+    height: 32px;
     text-align: right;
+}
+
+/* Magic selector to find the component between the plugins and protected session/sync */
+#launcher-pane > .component:not(.dropdown) + .component:not(.dropdown) + .spacer {
+    flex: unset !important;
+    flex-grow: 1 !important;
+    border: 0 !important;
 }
 
 #launcher-pane .global-menu-button {
