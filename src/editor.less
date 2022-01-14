@@ -13,9 +13,13 @@
     margin: -1px 4px 4px 0;
 }
 
-.component.note-split > .component:last-of-type:hover,
-.component.note-split > .component:last-of-type:focus-within {
-    border-color: var(--accent-color);
+.component.note-split > .component:last-of-type {
+    margin-bottom: 2px;
+
+    &:hover,
+    &:focus-within {
+        border-color: var(--accent-color);
+    }
 }
 
 body .CodeMirror {
