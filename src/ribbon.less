@@ -9,6 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1px !important;
+    margin-left: -1px !important;   // Align borders with editor.
 
     // Move the ribbon tab bar to the bottom.
     & > div {
@@ -39,6 +40,10 @@
             border-radius: 3px;
             margin: 0 1px;
             padding: 2px 4px;
+
+            .bx {
+                font-size: 15px;
+            }
 
             &:hover {
                 border-color: @breeze-toolbutton-hover-border-color !important;
