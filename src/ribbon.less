@@ -24,7 +24,8 @@
     }
 
     .ribbon-tab-container {
-        display: block;
+        display: flex;
+        justify-content: flex-start;
         margin: 0;
 
         .ribbon-tab-title {
@@ -36,6 +37,9 @@
             border-radius: 3px;
             margin: 0 1px;
             padding: 3px 4px 4px 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             .bx {
                 font-size: 15px;
@@ -44,6 +48,7 @@
             .ribbon-tab-title-label {
                 display: inline !important;
                 margin-left: 2px;
+                white-space: nowrap;
             }
 
             &:hover {
@@ -54,7 +59,6 @@
             &.active {
                 border-color: @breeze-toolbutton-active-border-color;
                 background-color: @breeze-toolbutton-active-background-color;
-                overflow: unset;
             }
 
         }
