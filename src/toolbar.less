@@ -44,13 +44,13 @@ body:focus-within {
     }
 
     // Append labels to tool bar items, if they have a corresponding tooltip.
-    &[data-original-title=""][title]:not([title=""]):not(.bx-shield-quarter) {
+    &[data-original-title=""][title]:not([title=""]):not(.bx-shield-quarter):not(.bx-history) {
         .text-button(attr(title));
     }
 
     // Some tooltips are changed at some point, rendering them into more verbose tooltips
     // or into keyboard shortcut indications. Fall back to using the original title for those.
-    &[data-original-title]:not([data-original-title=""]) {
+    &[data-original-title]:not([data-original-title=""]):not(.bx-calendar) {
         .text-button(attr(data-original-title));
     }
 }
