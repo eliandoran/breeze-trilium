@@ -1,0 +1,15 @@
+@footer-ribbon-height: 31px;
+
+.ribbon-container {
+    order: 1000;
+    display: flex;
+    flex-wrap: wrap;
+
+    // Move the ribbon tab bar to the bottom.
+    & > div {
+        flex-grow: 1;
+        width: 100%;
+
+        &.ribbon-top-row { order: 1000; }
+    }
+}
