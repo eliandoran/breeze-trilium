@@ -52,20 +52,32 @@
 
         }
     }
+}
 
-    .ribbon-button-container {
-        position: absolute;
-        top: 11px;
-        right: (@editor-split-button-right-margin + @breeze-iconbutton-width + @breeze-iconbutton-spacing);
-        border: 0;
-        margin: 0;
 
-        .icon-action {
-            .icon-button();
-        }
+/*
+ * Move "More" and "History" buttons to the top right of the editor, taking into consideration
+ * that there are already there the buttons to split & close the pane.
+ */
+@ribbon-button-right-margin: 7px;
 
-        & > * {
-            margin: 0 @breeze-iconbutton-spacing;
-        }
+.title-row {
+    padding-right: (@breeze-iconbutton-width * 2 + @breeze-iconbutton-spacing * 6 + @ribbon-button-right-margin);
+}
+
+.ribbon-container .ribbon-button-container {
+    position: absolute;
+    top: 12px;
+    right: @ribbon-button-right-margin;
+    border: 0;
+    margin: 0;
+
+    .icon-action {
+        .icon-button();
+    }
+
+    & > * {
+        margin: 0 @breeze-iconbutton-spacing !important;
     }
 }
+
