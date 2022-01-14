@@ -1,5 +1,9 @@
 @footer-ribbon-height: 31px;
 
+.note-split {
+    position: relative;
+}
+
 .ribbon-container {
     order: 1000;
     display: flex;
@@ -46,6 +50,22 @@
                 overflow: unset;
             }
 
+        }
+    }
+
+    .ribbon-button-container {
+        position: absolute;
+        top: 11px;
+        right: (@editor-split-button-right-margin + @breeze-iconbutton-width + @breeze-iconbutton-spacing);
+        border: 0;
+        margin: 0;
+
+        .icon-action {
+            .icon-button();
+        }
+
+        & > * {
+            margin: 0 @breeze-iconbutton-spacing;
         }
     }
 }

@@ -1,3 +1,15 @@
+@editor-split-button-right-margin: 7px;
+
+.title-row {
+    .icon-action {
+        .icon-button();
+
+        &.bx-dock-right {
+            margin-right: @editor-split-button-right-margin;
+        }
+    }
+}
+
 .component.note-split > .component:last-of-type {
     --main-background-color: #232629;
     background: var(--main-background-color);
