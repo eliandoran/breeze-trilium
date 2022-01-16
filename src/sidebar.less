@@ -1,4 +1,7 @@
 #left-pane {
+    --active-item-text-color: @breeze-sidebar-active-foreground;
+    --active-item-background-color: @breeze-sidebar-active-background;
+
     /*
     * Sidebar
     */
@@ -25,7 +28,8 @@
     }
 
     span.fancytree-node:hover {
-        background-color: #2e4857;
+        background-color: @breeze-sidebar-hover-background;
+        color: @breeze-sidebar-hover-foreground;
         border: 0;
     }
 
