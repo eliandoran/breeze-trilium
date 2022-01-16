@@ -6,7 +6,7 @@ function build_theme() {
     theme=$1
     output_path="$output_dir/breeze-$theme.css"
     echo "Building theme "$theme": $output_path"
-    lessc "$script_dir/src/breeze-$theme.less" > "$output_path"
+    lessc "$script_dir/src/color-scheme/breeze-$theme.less" > "$output_path"
 }
 
 if [ $# -eq 1 ]; then
