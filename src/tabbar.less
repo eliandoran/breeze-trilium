@@ -1,5 +1,5 @@
 div.tab-row-widget {
-    --main-background-color: #26292c;
+    --main-background-color: @breeze-tabbar-background;
     padding-left: 4px;
     position: relative;
 }
@@ -11,7 +11,7 @@ div.tab-row-widget:before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #5f6265;
+    background: @breeze-tabbar-border;
 }
 
 #rest-pane > .component:first-of-type {
@@ -29,7 +29,7 @@ div.tab-row-widget:before {
 .tab-row-widget .note-tab .note-tab-wrapper {
     position: relative;
     border: 1px solid transparent;
-    border-bottom-color: #5f6265;
+    border-bottom-color: @breeze-tabbar-border;
     border-radius: 3px 3px 0 0 !important;
     background-color: var(--main-background-color);
     height: 30px !important;
@@ -39,7 +39,7 @@ div.tab-row-widget:before {
 }
 
 .tab-row-widget .note-tab[active] .note-tab-wrapper {
-    border: 1px solid #5f6265;
+    border: 1px solid @breeze-tabbar-border;
     border-bottom-color: var(--active-tab-background-color);
     overflow: visible;
 }
@@ -60,14 +60,14 @@ div.tab-row-widget:before {
     position: relative;
     width: 16px;
     height: 16px;
-    background: #939597;
+    background: @breeze-tabbar-close-normal-background;
     line-height: 1;
     top: 50%;
     transform: translateY(-50%);
-}
 
-.tab-row-widget .note-tab .note-tab-wrapper .note-tab-close:hover {
-    background-color: var(--breeze-toolbutton-destructive-background-color);
+    &:hover {
+        background-color: @breeze-tabbar-close-hover-background;
+    }
 }
 
 .tab-row-widget .note-tab .note-tab-wrapper .note-tab-close span {
