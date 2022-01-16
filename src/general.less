@@ -4,8 +4,6 @@
     --tree-font-family: var(--main-font-family);
     --tree-font-size: 9.5pt;
 
-    --accent-color: #3daee9;
-
     --main-text-color: @breeze-window-foreground;
     --main-background-color: @breeze-window-background;
     --input-text-color: var(--main-text-color);
@@ -15,13 +13,13 @@
     --modal-background-color: @breeze-window-background;
     --modal-backdrop-color: black;
 
-    --link-color: var(--breeze-link-color);
+    --link-color: @breeze-link-color;
 
     --left-pane-background-color: var(--main-background-color);
     --left-pane-text-color: var(--main-text-color);
 
     --active-item-text-color: var(--left-pane-text-color);
-    --active-item-background-color: #3daee9;
+    --active-item-background-color: @breeze-accent-color;
 
     --launcher-pane-background-color: @breeze-titlebar-inactive-background;
     --launcher-pane-text-color: var(--left-pane-text-color);
@@ -33,10 +31,10 @@
 
     --hover-item-background-color: transparent;
 
-    --accented-background-color: #1B1E20;
-    --more-accented-background-color: var(--accented-background-color);
+    --accented-background-color: @breeze-titlebar-inactive-background;
+    --more-accented-background-color: @breeze-titlebar-active-background;
 
     --mermaid-theme: forest;
 
-    --main-border-color: #3f4246;
+    --main-border-color: @breeze-input-border;
 }
