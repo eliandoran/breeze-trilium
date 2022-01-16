@@ -9,6 +9,19 @@
 
     .note-icon-widget {
         height: @title-row-height !important;
+        margin: 0 3px 0 0 !important;
+        padding: 0 !important;
+        width: 32px;
+        height: @title-row-height;
+        position: relative;
+
+        button {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            .icon-button();
+        }
     }
 
     .note-title-widget {
