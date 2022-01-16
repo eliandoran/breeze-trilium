@@ -1,0 +1,19 @@
+:root {
+    --tooltip-background-color: @breeze-tooltip-background;
+}
+
+.tooltip {
+    --main-border-color: @breeze-tooltip-border;
+    --main-text-color: @breeze-tooltip-foreground;
+    --main-font-size: 9pt;
+
+    & > .arrow {
+        display: none;
+    }
+
+    & > .tooltip-inner {
+        border-radius: 3px !important;
+        padding: 4px 5px !important;
+        box-shadow: 0 0 @breeze-tooltip-shadow-radius @breeze-tooltip-shadow-color;
+    }
+}

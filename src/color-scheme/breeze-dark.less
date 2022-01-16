@@ -1,0 +1,75 @@
+@breeze-window-background: #2a2e32;
+@breeze-window-foreground: #fcfcfc;
+@breeze-titlebar-active-background: #31363b;
+@breeze-titlebar-inactive-background: @breeze-window-background;
+
+@breeze-input-background: #232629;
+@breeze-input-border: #5f6265;
+
+@breeze-accent-color: #3daee9;
+@breeze-link-color: #1d99f3;
+
+@breeze-toolbar-border: #64686b;
+
+@breeze-sidebar-active-background: @breeze-accent-color;
+@breeze-sidebar-active-foreground: #ffffff;
+@breeze-sidebar-hover-background: #2e4857;
+@breeze-sidebar-hover-foreground: @breeze-window-foreground;
+@breeze-sidebar-border: #3f4246;
+
+@breeze-tabbar-background: #26292c;
+@breeze-tabbar-border: #5f6265;
+@breeze-tabbar-close-normal-background: #939597;
+@breeze-tabbar-close-hover-background: #823943;
+
+@breeze-tabbar-normal-background: transparent;
+@breeze-tabbar-normal-foreground: @breeze-window-foreground;
+
+@breeze-tabbar-active-background: @breeze-window-background;
+@breeze-tabbar-active-foreground: @breeze-tabbar-normal-foreground;
+
+@breeze-tabbar-hover-background: #2e4857;
+@breeze-tabbar-hover-foreground: @breeze-tabbar-normal-foreground;
+
+@breeze-toolbutton-foreground-color: @breeze-window-foreground;
+@breeze-toolbutton-normal-border-color: transparent;
+@breeze-toolbutton-normal-background-color: transparent;
+@breeze-toolbutton-active-border-color: @breeze-border;
+@breeze-toolbutton-active-background-color: #45484c;
+@breeze-toolbutton-hover-border-color: @breeze-accent-color;
+@breeze-toolbutton-hover-background-color: transparent;
+
+@breeze-scrollbar-normal-handle-background: #4f5255;
+@breeze-scrollbar-normal-handle-border: #808284;
+@breeze-scrollbar-normal-track-background: transparent;
+@breeze-scrollbar-normal-track-border: transparent;
+
+@breeze-scrollbar-hover-handle-background: #346e8e;
+@breeze-scrollbar-hover-handle-border: #3daee9;
+@breeze-scrollbar-hover-track-background: #4a4d51;
+@breeze-scrollbar-hover-track-border: #747779;
+
+@breeze-tooltip-background: #31363b;
+@breeze-tooltip-foreground: #edf2f4;
+@breeze-tooltip-border: #64686b;
+@breeze-tooltip-light-foreground: #8aa7af;
+@breeze-tooltip-shadow-color: rgb(0 0 0 / 50%);
+@breeze-tooltip-shadow-radius: 9px;
+
+@breeze-contextmenu-background: #26292d;
+@breeze-contextmenu-foreground: @breeze-window-foreground;
+@breeze-contextmenu-border: @breeze-tabbar-border;
+@breeze-contextmenu-item-hover-background: #2d5165;
+@breeze-contextmenu-item-hover-border: #5abaec;
+@breeze-contextmenu-shadow-color: rgb(0 0 0 / 50%);
+@breeze-contextmenu-shadow-radius: 10px;
+
+@breeze-editor-gutter-background: #31363b;
+@breeze-editor-gutter-foreground: #77797a;
+@breeze-editor-gutter-border: #3f4347;
+
+@import "../master.less";
+
+.CodeMirror .CodeMirror-line {
+    filter: invert(100%) hue-rotate(180deg);
+}

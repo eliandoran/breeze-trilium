@@ -1,14 +1,65 @@
+@title-row-height: 42px;
+
 .title-row {
+    height: @title-row-height !important;
+
     .icon-action {
         .icon-button();
+    }
+
+    .note-icon-widget {
+        height: @title-row-height !important;
+        margin: 0 3px 0 0 !important;
+        padding: 0 !important;
+        width: 32px;
+        height: @title-row-height;
+        position: relative;
+
+        button {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            .icon-button();
+        }
+    }
+
+    .note-title-widget {
+        height: @title-row-height !important;
+        margin: 0 !important;
+        position: relative;
+
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15pt !important;
+            border: 1px solid transparent !important;
+            border-radius: 3px;
+            padding: 0 5px;
+            transition: border-color 100ms ease-in-out,
+                        background-color 100ms ease-in-out;
+
+            &:hover {
+                border-color: @breeze-accent-color !important;
+            }
+
+            &:focus {
+                border-color: @breeze-accent-color !important;
+                background-color: @breeze-input-background !important;
+                outline: none !important;
+            }
+        }
     }
 }
 
 .component.note-split > .component:last-of-type {
-    --main-background-color: #232629;
+    --main-background-color: @breeze-input-background;
     background: var(--main-background-color);
-    border: 1px solid #5f6265;
-    border-radius: 6px;
+    border: 1px solid @breeze-input-border;
+    border-radius: 3px;
     transition: border-color 250ms ease-in-out;
     margin: -1px 4px 4px 0;
 }
@@ -18,10 +69,17 @@
 
     &:hover,
     &:focus-within {
-        border-color: var(--accent-color);
+        border-color: @breeze-accent-color;
     }
 }
 
-body .CodeMirror {
-    filter: invert(100%) hue-rotate(180deg);
+.CodeMirror {
+    .CodeMirror-gutters {
+        border-right: 1px solid @breeze-editor-gutter-border;
+        color: @breeze-editor-gutter-foreground;
+
+        &> div {
+            background: @breeze-editor-gutter-background;
+        }
+    }
 }
