@@ -56,7 +56,7 @@ div.tab-row-widget:before {
             left: -1px;
             right: -1px;
             height: 3px;
-            background: var(--accent-color);
+            background: @breeze-accent-color;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
         }
@@ -91,9 +91,9 @@ div.tab-row-widget:before {
     border-radius: 3px !important;
     line-height: 22px !important;
     margin: 1px !important;
-}
 
-.note-new-tab:hover {
-    background-color: transparent !important;
-    border-color: var(--accent-color) !important;
+    &:hover {
+        background-color: transparent !important;
+        border-color: @breeze-toolbutton-hover-border-color !important;
+    }
 }
