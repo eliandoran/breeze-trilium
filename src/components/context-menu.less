@@ -9,10 +9,12 @@
 
     border-color: @breeze-contextmenu-border;
     padding: 0 !important;
+    box-shadow: 0 0 @breeze-contextmenu-shadow-radius @breeze-contextmenu-shadow-color !important;
 
     .bx {
         font-size: 11pt;    // Make icons slightly larger, because the icons seem otherwise unbalanced.
         margin-right: 4px;
+        transform: translateY(2px); // Align icons with the text.
     }
 
     .dropdown-item {
