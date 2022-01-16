@@ -10,11 +10,18 @@
     border-color: @breeze-contextmenu-border;
     padding: 0 !important;
 
+    .bx {
+        font-size: 11pt;    // Make icons slightly larger, because the icons seem otherwise unbalanced.
+        margin-right: 4px;
+    }
+
     .dropdown-item {
         border-radius: 3px;
         border-color: @breeze-toolbutton-active-border-color !important;
         background: transparent !important;
         border: 1px solid transparent !important;
+        font-size: 9pt;
+        padding: 4px 10px !important;
 
         /* Overlap with the context menu's border so that when highlighted there will be no double borders. */
         margin-left: -1px;
