@@ -1,20 +1,23 @@
+#root-widget {
+    > .gutter {
+        background: transparent !important;
+
+        &.gutter-horizontal {
+            border-left: 1px solid @breeze-sidebar-border;
+        }
+    }
+}
+
 #left-pane {
     --active-item-text-color: @breeze-sidebar-active-foreground;
     --active-item-background-color: @breeze-sidebar-active-background;
+    --main-border-color: @breeze-sidebar-border;
 
     /*
     * Sidebar
     */
     .tree-wrapper > .tree {
         padding: 13px 2px 6px 9px;
-    }
-
-    .gutter {
-        background: none !important;
-    }
-
-    .gutter.gutter-horizontal {
-        border-left: 1px solid var(--main-border-color);
     }
 
     .quick-search {
