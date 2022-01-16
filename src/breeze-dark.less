@@ -2,5 +2,10 @@
 @breeze-window-foreground: #fcfcfc;
 @breeze-titlebar-active-background: #31363b;
 @breeze-titlebar-inactive-background: @breeze-window-background;
+@breeze-input-background: #232629;
 
 @import "master.less";
+
+body .CodeMirror {
+    filter: invert(100%) hue-rotate(180deg);
+}
