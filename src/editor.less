@@ -1,6 +1,29 @@
+@title-row-height: 42px;
+
 .title-row {
+    height: @title-row-height !important;
+
     .icon-action {
         .icon-button();
+    }
+
+    .note-icon-widget {
+        height: @title-row-height !important;
+    }
+
+    .note-title-widget {
+        height: @title-row-height !important;
+        margin: 0 !important;
+        position: relative;
+
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15pt !important;
+        }
     }
 }
 
