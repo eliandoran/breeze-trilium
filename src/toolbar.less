@@ -2,19 +2,19 @@
     flex-direction: row !important;
     width: 100% !important;
     height: @breeze-toolbar-height;
-    border-bottom: 1px solid var(--breeze-separator-accent-color);
+    border-bottom: 1px solid @breeze-toolbar-border;
     box-sizing: border-box;
     padding: 7px 8px !important;
-    --hover-item-background-color: var(--breeze-toolbutton-active-background-color);
+    --hover-item-background-color: @breeze-toolbutton-hover-background-color;
 }
 
 body:focus-within {
-    --launcher-pane-background-color: var(--breeze-window-title-active-background-color);
+    --launcher-pane-background-color: @breeze-titlebar-active-background;
 }
 
 #launcher-pane .spacer {
     flex: 0 !important;
-    border-left: 1px solid var(--breeze-separator-accent-color);
+    border-left: 1px solid @breeze-toolbar-border;
     margin: 6px 4px;
 }
 

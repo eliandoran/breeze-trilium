@@ -1,0 +1,54 @@
+:root {
+    --menu-text-color: @breeze-contextmenu-foreground;
+    --menu-background-color: @breeze-contextmenu-background;
+}
+
+.dropdown-menu {
+    --hover-item-background-color: @breeze-contextmenu-item-hover-background;
+    --hover-item-text-color: @breeze-contextmenu-foreground;
+
+    border-color: @breeze-contextmenu-border;
+    padding: 0 !important;
+    box-shadow: 0 0 @breeze-contextmenu-shadow-radius @breeze-contextmenu-shadow-color !important;
+
+    .bx {
+        font-size: 11pt;    // Make icons slightly larger, because the icons seem otherwise unbalanced.
+        margin-right: 4px;
+        transform: translateY(2px); // Align icons with the text.
+    }
+
+    .dropdown-item {
+        border-radius: 3px;
+        border-color: @breeze-toolbutton-active-border-color !important;
+        background: transparent !important;
+        border: 1px solid transparent !important;
+        font-size: 9pt;
+        padding: 4px 10px !important;
+
+        /* Overlap with the context menu's border so that when highlighted there will be no double borders. */
+        margin-left: -1px;
+        margin-bottom: -1px;
+        margin-top: 1px;
+        width: calc(100% + 2px);
+
+        &:first-of-type {
+            margin-top: -1px;
+        }
+
+        &:hover {
+            border-color: @breeze-contextmenu-item-hover-border !important;
+            background-color:  !important;
+        }
+    }
+
+    .dropdown-divider {
+        border-top-color: @breeze-contextmenu-border !important;
+        margin: 1px 0 !important;
+    }
+
+    kbd {
+        color: inherit !important;
+        font-family: inherit !important;
+        font-size: inherit !important;
+    }
+}
