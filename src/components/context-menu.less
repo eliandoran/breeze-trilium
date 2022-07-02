@@ -1,15 +1,15 @@
 :root {
-    --menu-text-color: @breeze-contextmenu-foreground;
-    --menu-background-color: @breeze-contextmenu-background;
+    --menu-text-color: var(--breeze-contextmenu-foreground);
+    --menu-background-color: var(--breeze-contextmenu-background);
 }
 
 .dropdown-menu {
-    --hover-item-background-color: @breeze-contextmenu-item-hover-background;
-    --hover-item-text-color: @breeze-contextmenu-foreground;
+    --hover-item-background-color: var(--breeze-contextmenu-item-hover-background);
+    --hover-item-text-color: var(--breeze-contextmenu-foreground);
 
-    border-color: @breeze-contextmenu-border;
+    border-color: var(--breeze-contextmenu-border);
     padding: 0 !important;
-    box-shadow: 0 0 @breeze-contextmenu-shadow-radius @breeze-contextmenu-shadow-color !important;
+    box-shadow: 0 0 var(--breeze-contextmenu-shadow-radius) var(--breeze-contextmenu-shadow-color) !important;
 
     .bx {
         font-size: 11pt;    // Make icons slightly larger, because the icons seem otherwise unbalanced.
@@ -19,7 +19,7 @@
 
     .dropdown-item {
         border-radius: 3px;
-        border-color: @breeze-toolbutton-active-border-color !important;
+        border-color: var(--breeze-toolbutton-active-border-color) !important;
         background: transparent !important;
         border: 1px solid transparent !important;
         font-size: 9pt;
@@ -36,13 +36,12 @@
         }
 
         &:hover {
-            border-color: @breeze-contextmenu-item-hover-border !important;
-            background-color:  !important;
+            border-color: var(--breeze-contextmenu-item-hover-border) !important;
         }
     }
 
     .dropdown-divider {
-        border-top-color: @breeze-contextmenu-border !important;
+        border-top-color: var(--breeze-contextmenu-border) !important;
         margin: 1px 0 !important;
     }
 

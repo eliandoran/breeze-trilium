@@ -1,5 +1,3 @@
-@footer-ribbon-height: 31px;
-
 .note-split {
     position: relative;
 }
@@ -30,9 +28,9 @@
 
         .ribbon-tab-title {
             display: inline-block;
-            color: @breeze-toolbutton-foreground-color;
-            border: 1px solid @breeze-toolbutton-normal-border-color;
-            background: @breeze-toolbutton-normal-background-color;
+            color: var(--breeze-toolbutton-foreground-color);
+            border: 1px solid var(--breeze-toolbutton-normal-border-color);
+            background: var(--breeze-toolbutton-normal-background-color);
             font-size: 12px;
             border-radius: 3px;
             margin: 0 1px;
@@ -52,13 +50,13 @@
             }
 
             &:hover {
-                border-color: @breeze-toolbutton-hover-border-color !important;
-                background: @breeze-toolbutton-hover-background-color;
+                border-color: var(--breeze-toolbutton-hover-border-color) !important;
+                background: var(--breeze-toolbutton-hover-background-color);
             }
 
             &.active {
-                border-color: @breeze-toolbutton-active-border-color;
-                background-color: @breeze-toolbutton-active-background-color;
+                border-color: var(--breeze-toolbutton-active-border-color);
+                background-color: var(--breeze-toolbutton-active-background-color);
             }
 
         }
@@ -70,20 +68,14 @@
 }
 
 
-/*
- * Move "More" and "History" buttons to the top right of the editor, taking into consideration
- * that there are already there the buttons to split & close the pane.
- */
-@ribbon-button-right-margin: 7px;
-
 .title-row {
-    padding-right: (@breeze-iconbutton-width * 2 + @breeze-iconbutton-spacing * 6 + @ribbon-button-right-margin - 1px);
+    padding-right: calc(var(--breeze-iconbutton-width) * 2 + var(--breeze-iconbutton-spacing) * 6 + var(--ribbon-button-right-margin) - 1px);
 }
 
 .ribbon-container .ribbon-button-container {
     position: absolute;
     top: 8px;
-    right: @ribbon-button-right-margin;
+    right: var(--ribbon-button-right-margin);
     border: 0;
     margin: 0;
 
@@ -92,7 +84,7 @@
     }
 
     & > * {
-        margin: 0 @breeze-iconbutton-spacing !important;
+        margin: 0 var(--breeze-iconbutton-spacing) !important;
     }
 }
 

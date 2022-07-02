@@ -1,18 +1,16 @@
-@title-row-height: 42px;
-
 .title-row {
-    height: @title-row-height !important;
+    height: var(--title-row-height) !important;
 
     .icon-action {
         .icon-button();
     }
 
     .note-icon-widget {
-        height: @title-row-height !important;
+        height: var(--title-row-height) !important;
         margin: 0 3px 0 0 !important;
         padding: 0 !important;
         width: 32px;
-        height: @title-row-height;
+        height: var(--title-row-height);
         position: relative;
 
         button {
@@ -25,7 +23,7 @@
     }
 
     .note-title-widget {
-        height: @title-row-height !important;
+        height: var(--title-row-height) !important;
         margin: 0 !important;
         position: relative;
 
@@ -43,12 +41,12 @@
                         background-color 100ms ease-in-out;
 
             &:hover {
-                border-color: @breeze-accent-color !important;
+                border-color: var(--breeze-accent-color) !important;
             }
 
             &:focus {
-                border-color: @breeze-accent-color !important;
-                background-color: @breeze-input-background !important;
+                border-color: var(--breeze-accent-color) !important;
+                background-color: var(--breeze-input-background) !important;
                 outline: none !important;
             }
         }
@@ -56,9 +54,9 @@
 }
 
 .component.note-split > .component:last-of-type {
-    --main-background-color: @breeze-input-background;
+    --main-background-color: var(--breeze-input-background);
     background: var(--main-background-color);
-    border: 1px solid @breeze-input-border;
+    border: 1px solid var(--breeze-input-border);
     border-radius: 3px;
     transition: border-color 250ms ease-in-out;
     margin: -1px 4px 4px 0;
@@ -69,17 +67,17 @@
 
     &:hover,
     &:focus-within {
-        border-color: @breeze-accent-color;
+        border-color: var(--breeze-accent-color);
     }
 }
 
 .CodeMirror {
     .CodeMirror-gutters {
-        border-right: 1px solid @breeze-editor-gutter-border;
-        color: @breeze-editor-gutter-foreground;
+        border-right: 1px solid var(--breeze-editor-gutter-border);
+        color: var(--breeze-editor-gutter-foreground);
 
         &> div {
-            background: @breeze-editor-gutter-background;
+            background: var(--breeze-editor-gutter-background);
         }
     }
 }
