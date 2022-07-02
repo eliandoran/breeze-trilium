@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        @import "../constants/dark.less";
+    }
+
+    .CodeMirror .CodeMirror-line {
+        filter: invert(100%) hue-rotate(180deg);
+    }    
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        @import "../constants/light.less";
+    }
+}
+
+@import "../master.less";

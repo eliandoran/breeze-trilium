@@ -18,3 +18,4 @@ fi
 
 build_theme "light"
 build_theme "dark"
+build_theme "auto"
