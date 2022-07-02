@@ -50,7 +50,7 @@ body:focus-within {
 
     // Some tooltips are changed at some point, rendering them into more verbose tooltips
     // or into keyboard shortcut indications. Fall back to using the original title for those.
-    &[data-original-title]:not([data-original-title=""]):not(.bx-calendar) {
+    &[data-original-title]:not([data-original-title=""]):not(.bx-calendar):not(.global-menu-button) {
         .text-button(attr(data-original-title));
     }
 }
