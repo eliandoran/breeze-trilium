@@ -1,20 +1,29 @@
-@breeze-toolbar-height: 46px;
-@breeze-transition-default: ease-in-out 200ms;
-@breeze-transition-fast: ease-in-out 100ms;
-
-@breeze-border: #5f6265;
-
-@breeze-foreground-color: #fcfcfc;
-
-@breeze-iconbutton-width: 32px;
-@breeze-iconbutton-height: @breeze-iconbutton-width;
-@breeze-iconbutton-spacing: 1px;
-
 :root {
+    --breeze-toolbar-height: 46px;
+    --breeze-transition-default: ease-in-out 200ms;
+    --breeze-transition-fast: ease-in-out 100ms;
+
+    --breeze-border: #5f6265;
+
+    --breeze-foreground-color: #fcfcfc;
+
+    --breeze-iconbutton-width: 32px;
+    --breeze-iconbutton-height: var(--breeze-iconbutton-width);
+    --breeze-iconbutton-spacing: 1px;
+
     --breeze-separator-dim-color: #3f4246;
 
     --breeze-dark-background-color: #1b1e20;
     --breeze-dark-border-color: #535657;
+    --title-row-height: 42px;
+    --footer-ribbon-height: 31px;
+    --breeze-scrollbar-border-radius: 24px;
+
+    /*
+     * Move "More" and "History" buttons to the top right of the editor, taking into consideration
+     * that there are already there the buttons to split & close the pane.
+     */
+    --ribbon-button-right-margin: 7px;
 }
 
 .icon-button(@size: 32px) {
@@ -23,7 +32,7 @@
     padding: 0 !important;
     text-align: center;
     font-size: 18px !important;
-    transition: border-color @breeze-transition-fast;
+    transition: border-color var(--breeze-transition-fast);
     border: 1px solid transparent !important;
     border-radius: 3px;
     margin: 0 1px;
@@ -34,6 +43,6 @@
     }
 
     &:hover {
-        border-color: @breeze-accent-color !important;
+        border-color: var(--breeze-accent-color) !important;
     }
 }

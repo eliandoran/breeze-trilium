@@ -1,23 +1,21 @@
-@breeze-scrollbar-border-radius: 24px;
-
 ::-webkit-scrollbar {
-    background: @breeze-scrollbar-normal-track-background !important;
-    border: 1px solid @breeze-scrollbar-normal-track-border !important;
-    border-radius: @breeze-scrollbar-border-radius !important;
+    background: var(--breeze-scrollbar-normal-track-background) !important;
+    border: 1px solid var(--breeze-scrollbar-normal-track-border) !important;
+    border-radius: var(--breeze-scrollbar-border-radius) !important;
 
     &:hover {
-        background-color: @breeze-scrollbar-hover-track-background !important;
-        border-color: @breeze-scrollbar-hover-track-border !important;
+        background-color: var(--breeze-scrollbar-hover-track-background) !important;
+        border-color: var(--breeze-scrollbar-hover-track-border) !important;
     }
 }
 
 ::-webkit-scrollbar-thumb {
-    background: @breeze-scrollbar-normal-handle-background !important;
-    border-color: @breeze-scrollbar-normal-handle-border !important;
-    border-radius: @breeze-scrollbar-border-radius !important;
+    background: var(--breeze-scrollbar-normal-handle-background) !important;
+    border-color: var(--breeze-scrollbar-normal-handle-border) !important;
+    border-radius: var(--breeze-scrollbar-border-radius) !important;
 
     &:hover {
-        background: @breeze-scrollbar-hover-handle-background !important;
-        border-color: @breeze-scrollbar-hover-handle-border !important;
+        background: var(--breeze-scrollbar-hover-handle-background) !important;
+        border-color: var(--breeze-scrollbar-hover-handle-border) !important;
     }
 }
