@@ -17,7 +17,11 @@
     * Sidebar
     */
     .tree-wrapper > .tree {
-        padding: 13px 2px 6px 9px;
+        @top-margin: 12px;
+        @bottom-margin: 8px;
+        margin: @top-margin 4px @bottom-margin 0;
+        padding-left: 5px;
+        height: calc(100% - @top-margin - @bottom-margin);
     }
 
     .quick-search {
