@@ -1,7 +1,3 @@
-.note-split {
-    position: relative;
-}
-
 .ribbon-container {
     order: 1000;
     display: flex;
@@ -64,6 +60,17 @@
 
     .ribbon-body {
         border: 0 !important;
+
+        .attribute-list {
+            position: unset;
+        }
+
+        .attr-detail {
+            left: 50% !important;
+            top: 50% !important;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+        }
     }
 }
 
@@ -74,7 +81,7 @@
 
 .ribbon-container .ribbon-button-container {
     position: absolute;
-    top: 8px;
+    top: 85px;
     right: var(--ribbon-button-right-margin);
     border: 0;
     margin: 0;
