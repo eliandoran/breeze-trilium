@@ -55,7 +55,31 @@
             }
         }
 
-    }    
+    }
+
+    .btn {
+        font-size: var(--tree-font-size);
+        border: 1px solid var(--breeze-button-border);
+        border-radius: 3px !important;
+        padding: 6px 10px !important;
+        background: linear-gradient(to bottom, var(--breeze-button-background-start), var(--breeze-button-background-end)) !important;
+        cursor: default !important;
+        transition: border-color var(--breeze-transition-fast);
+
+        &:focus,
+        &:hover,
+        &:active {
+            border-color: var(--breeze-contextmenu-item-hover-border) !important;
+        }
+
+        kbd {
+            font-family: inherit !important;
+
+            &:last-of-type {
+                padding-right: 0 !important;            
+            }
+        }
+    }
 }
 
 .algolia-autocomplete .aa-dropdown-menu {
