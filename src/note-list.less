@@ -5,12 +5,16 @@
 .note-book-card {
     border-radius: 3px !important;
     border: 1px solid transparent !important;
-    box-shadow: 3px 3px 5px rgb(0 0 0 / 12%);
+    box-shadow: 0 0 9px rgb(0 0 0 / 16%);
     margin: 4px 15px 10px 0 !important;
-    --accented-background-color: var(--breeze-titlebar-inactive-background);
+    --accented-background-color: var(--breeze-notelist-background);
     --more-accented-background-color: var(--accented-background-color);
 
     &:hover {
         border-color: var(--breeze-accent-color) !important;
     }
+}
+
+.note-book-card .note-book-card {
+    box-shadow: none !important;
 }
