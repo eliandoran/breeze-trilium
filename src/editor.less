@@ -53,18 +53,14 @@
     }
 }
 
-.component.note-split > .component:last-of-type {
+.component.note-detail {
     --main-background-color: var(--breeze-input-background);
     background: var(--main-background-color);
     border: 1px solid var(--breeze-input-border);
     border-radius: 3px;
     transition: border-color 250ms ease-in-out;
-    margin: -1px 4px 4px 0;
-}
-
-.component.note-split > .component:last-of-type {
-    margin-bottom: 2px;
-
+    margin: 0 !important;
+    
     &:hover,
     &:focus-within {
         border-color: var(--breeze-accent-color);
