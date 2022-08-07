@@ -28,10 +28,10 @@ div.tab-row-widget:before {
 
 .tab-row-widget .note-tab {
     .note-tab-wrapper {
-        background-color: var(--breeze-tabbar-normal-background);
+        background-color: var(--breeze-tabbar-normal-background) !important;
+        border: 1px solid transparent;
         border-bottom-color: var(--breeze-tabbar-border);
         position: relative;
-        border: 1px solid transparent;
         border-radius: 3px 3px 0 0 !important;
         height: 30px !important;
         padding: 0 8px !important;
@@ -40,7 +40,7 @@ div.tab-row-widget:before {
     }
 
     &:hover .note-tab-wrapper {
-        background-color: var(--breeze-tabbar-hover-background);
+        background-color: var(--breeze-tabbar-hover-background) !important;
     }
 
     &[active] .note-tab-wrapper {
