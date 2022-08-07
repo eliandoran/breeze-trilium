@@ -12,7 +12,48 @@
         border: 0 !important;
     }
 
-    .form-group:last-of-type {
-        margin-bottom: 0 !important;
+    .form-control {
+        border-color: var(--breeze-border) !important;
+        font-size: var(--tree-font-size) !important;
+        background-color: var(--breeze-dark-background-color) !important;
+        height: 30px;
+        padding: 0 6px;
+        transition: border-color var(--breeze-transition-fast);
+
+        &:focus,
+        &:hover,
+        &:active {
+            border-color: var(--breeze-contextmenu-item-hover-border) !important;
+        }
     }
+
+    .form-group {
+        &:last-of-type {
+            margin-bottom: 0 !important;
+        }
+
+        .input-group {
+            background-color: var(--breeze-dark-background-color) !important;
+
+            .input-group-append {
+                .input-group-text {                    
+                    background: transparent !important;
+                    border-color: var(--breeze-border) !important;
+                    line-height: 28px !important;
+                    padding: 0 4px !important;
+                    transition: border-color var(--breeze-transition-fast);
+
+                    &:first-of-type {
+                        margin-left: 1px;
+                    }
+    
+                    &:hover {
+                        text-decoration: none;
+                        border-color: var(--breeze-contextmenu-item-hover-border) !important;
+                    }
+                }
+            }
+        }
+
+    }    
 }
