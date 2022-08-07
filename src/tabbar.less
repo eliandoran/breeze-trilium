@@ -31,7 +31,6 @@ div.tab-row-widget:before {
         background-color: var(--breeze-tabbar-normal-background) !important;
         border: 1px solid transparent;
         border-bottom-color: var(--breeze-tabbar-border);
-        position: relative;
         border-radius: 0 !important;
         height: 30px !important;
         padding: 0 8px !important;
@@ -73,8 +72,16 @@ div.tab-row-widget:before {
     top: 50%;
     transform: translateY(-50%);
 
+    span {
+        color: var(--breeze-tabbar-close-foreground) !important;
+    }
+
     &:hover {
         background-color: var(--breeze-tabbar-close-hover-background);
+        
+        span {
+            color: var(--breeze-tabbar-hover-background) !important;
+        }
     }
 }
 
