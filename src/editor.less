@@ -53,25 +53,19 @@
     }
 }
 
-.component.note-detail {
+// Selects the main container of the editor, to add a full size border around it.
+// TODO: Prone to breaking between versions, but no other way since there is no unique class attached to this.
+.split-note-container-widget .component.mermaid-widget + .component {
     --main-background-color: var(--breeze-input-background);
     background: var(--main-background-color);
     border: 1px solid var(--breeze-input-border);
     border-radius: 3px;
     transition: border-color 250ms ease-in-out;
-    margin: 0 !important;
+    margin: 0 4px 0 0 !important;
     
     &:hover,
     &:focus-within {
         border-color: var(--breeze-accent-color);
-    }
-
-    .component.note-detail-editable-text {
-        padding: 0 4px 0 14px !important;
-
-        .note-detail-editable-text-editor {
-            padding: 12px 0 !important;
-        }
     }
 }
 
