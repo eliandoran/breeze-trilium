@@ -13,6 +13,31 @@
     &:hover {
         border-color: var(--breeze-accent-color) !important;
     }
+
+    .note-book-header {
+        line-height: 1;
+
+        .note-icon {
+            font-size: 0.9em !important;
+            display: inline !important;
+            vertical-align: middle;
+        }
+
+        .note-book-title {
+            vertical-align: middle;
+        }
+
+        .rendered-note-attributes {
+            display: block;
+            font-size: 0.5em;
+            margin: 0.25em 0 0 0;
+            line-height: 1.1;
+
+            &::before {
+                display: none;
+            }
+        }
+    }    
 }
 
 .note-book-card .note-book-card {
