@@ -1,0 +1,28 @@
+.btn:not(.search-button) {
+    font-size: var(--tree-font-size);
+    border: 1px solid var(--breeze-button-border) !important;
+    border-radius: 3px !important;
+    padding: 6px 10px !important;
+    background: linear-gradient(to bottom, var(--breeze-button-background-start), var(--breeze-button-background-end)) !important;
+    cursor: default !important;
+    transition: border-color var(--breeze-transition-fast);
+    box-shadow: 0 1px 0 var(--breeze-button-shadow);
+
+    &:focus,
+    &:hover,
+    &:active {
+        border-color: var(--breeze-contextmenu-item-hover-border) !important;
+    }
+
+    kbd {
+        font-family: inherit !important;
+
+        &:last-of-type {
+            padding-right: 0 !important;            
+        }
+    }
+}
+
+.btn.dropdown-toggle {
+    padding: 5px 8px 4px 8px !important;
+}
