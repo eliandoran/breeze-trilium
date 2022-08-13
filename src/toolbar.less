@@ -135,3 +135,17 @@ body:focus-within {
         opacity: 1 !important;
     }
 }
+
+// Move "split button" in the top bar.
+.title-row .icon-action {
+    position: absolute !important;
+    top: 7px;    
+
+    &.bx-dock-right {
+        right: (32px * 3) + 14px;
+    }
+
+    &.bx-x {
+        right: (32px * 4) + 14px;
+    }
+}
