@@ -53,6 +53,13 @@ body:focus-within {
     &[data-original-title]:not([data-original-title=""]):not(.bx-calendar):not(.global-menu-button) {
         .text-button(attr(data-original-title));
     }
+
+    // Some of the original buttons now no longer have a tooltip that can be accessed via the DOM,
+    // so we are forced to hard-code some of them.
+    &.bx-file-blank { .text-button("New note"); }
+    &.bx-search { .text-button("Search"); }
+    &.bx-send { .text-button("Jump to note"); }
+    &.bx-map-alt { .text-button("Global Note Map"); }
 }
 
 #launcher-pane .sync-status {
