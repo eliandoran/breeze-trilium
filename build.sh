@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-script_dir=$(dirname $(realpath $0))
+script_dir=$(dirname "$(realpath $0)")
 output_dir="$script_dir"
 
 function build_theme() {
