@@ -16,23 +16,42 @@
         background: var(--breeze-input-background);
         border-right: 1px solid var(--breeze-border);
         border-bottom: none !important;
+        margin-right: 0 !important;
 
         .nav-link {
             color: var(--breeze-window-foreground);
             border: none !important;
+            border-radius: 0 !important;
+            padding: 5px 8px !important;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 8px;
+                right: 8px;
+                height: 1px;
+                background: var(--breeze-nav-border);
+            }
 
             &:hover {
-                background-color: var(--breeze-nav-hover) !important;
+                background-color: var(--breeze-nav-hover) !important;                
             }
 
             &.active {
                 background-color: var(--breeze-nav-active) !important;
             }
+
+            &:hover:after,
+            &.active:after {
+                display: none;
+            }
         }
     }
 
     .tab-content {
-        padding: 15px;
+        padding: 7px;
     }
     
 }
