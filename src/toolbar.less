@@ -41,27 +41,37 @@ body:focus-within {
             font-size: var(--tree-font-size);
             padding-right: 7px;
         }
+    }   
+    
+    @media (min-width: 700px) {
+        // Some of the original buttons now no longer have a tooltip that can be accessed via the DOM,
+        // so we are forced to hard-code some of them.
+        &.bx-file-blank { .text-button("New note"); }
+        &.bx-search { .text-button("Search"); }
     }
 
-    // Append labels to tool bar items, if they have a corresponding tooltip.
-    &[data-original-title=""][title]:not([title=""]):not(.bx-shield-quarter):not(.bx-history) {
-        .text-button(attr(title));
+    @media (min-width: 930px) {
+        // Append labels to tool bar items, if they have a corresponding tooltip.
+        &[data-original-title=""][title]:not([title=""]):not(.bx-shield-quarter):not(.bx-history) {
+            .text-button(attr(title));
+        }
+
+        // Some tooltips are changed at some point, rendering them into more verbose tooltips
+        // or into keyboard shortcut indications. Fall back to using the original title for those.
+        &[data-original-title]:not([data-original-title=""]):not(.bx-calendar):not(.global-menu-button) {
+            .text-button(attr(data-original-title));
+        }
     }
 
-    // Some tooltips are changed at some point, rendering them into more verbose tooltips
-    // or into keyboard shortcut indications. Fall back to using the original title for those.
-    &[data-original-title]:not([data-original-title=""]):not(.bx-calendar):not(.global-menu-button) {
-        .text-button(attr(data-original-title));
+    @media (min-width: 1120px) {
+        &.bx-send { .text-button("Jump to note"); }
+        &.bx-map-alt { .text-button("Global Note Map"); }
     }
 
-    // Some of the original buttons now no longer have a tooltip that can be accessed via the DOM,
-    // so we are forced to hard-code some of them.
-    &.bx-file-blank { .text-button("New note"); }
-    &.bx-search { .text-button("Search"); }
-    &.bx-send { .text-button("Jump to note"); }
-    &.bx-map-alt { .text-button("Global Note Map"); }
-    &.bx-history { .text-button("History"); }
-    &.bx-calendar { .text-button("Calendar"); }
+    @media (min-width: 1250px) {
+        &.bx-history { .text-button("History"); }
+        &.bx-calendar { .text-button("Calendar"); }
+    }    
 }
 
 #launcher-pane .sync-status {
