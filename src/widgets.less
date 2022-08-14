@@ -33,3 +33,20 @@ select.form-control {
 .btn.dropdown-toggle {
     padding: 5px 8px 4px 8px !important;
 }
+
+.form-control {
+    border-color: var(--breeze-border) !important;
+    font-size: var(--tree-font-size) !important;
+    background-color: var(--breeze-input-background) !important;
+    height: 30px !important;
+    padding: 0 6px !important;
+    transition: border-color var(--breeze-transition-fast);
+    border: 1px solid var(--breeze-border);
+    border-radius: 3px !important;
+
+    &:focus,
+    &:hover,
+    &:active {
+        border-color: var(--breeze-contextmenu-item-hover-border) !important;
+    }
+}

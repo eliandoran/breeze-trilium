@@ -3,7 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1px !important;
-    margin-left: -1px !important;   // Align borders with editor.    
+    margin-left: -1px !important;   // Align borders with editor.
+    padding-right: 3px !important;
 
     // Move the ribbon tab bar to the bottom.
     & > div {
@@ -99,11 +100,37 @@
 
     .attribute-list {
         margin: 0;
+        padding: 2px 0;
         
         .component {
             padding: 0 !important;
             margin: 0 !important;
         }
+
+        .attribute-list-editor {
+            padding: 0 !important;
+
+            p {
+                .form-control;
+                padding: 5px 6px !important;
+            }
+        }
+
+        .add-new-attribute-button,
+        .save-attributes-button {
+            top: 6px !important;
+            height: 18px !important;
+            color: black;
+            opacity: 0.7;
+            
+            &.add-new-attribute-button {
+                right: 5px !important;                
+            }
+            
+            &.save-attributes-button {
+                right: 25px !important;
+            }
+        }        
     }
 
     .inherited-attributes-container {
