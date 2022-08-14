@@ -88,9 +88,15 @@
         background: transparent;
         right: 15px !important;
         padding-bottom: 3px !important;
-
+        
         .tree-floating-button {
             .icon-button();
+            transition+: opacity var(--breeze-transition-fast);
+            opacity: 0.5;
+    
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 }
