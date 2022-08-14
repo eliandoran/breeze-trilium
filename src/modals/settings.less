@@ -1,0 +1,38 @@
+.modal.options-dialog {
+    .modal-body {
+        padding: 0 !important;
+
+        >div {
+            height: 600px !important;
+        }
+    }
+
+    .modal-content {
+        background-color: var(--breeze-window-background) !important;
+    }
+
+    .nav {
+        min-width: 165px;
+        background: var(--breeze-input-background);
+        border-right: 1px solid var(--breeze-border);
+        border-bottom: none !important;
+
+        .nav-link {
+            color: var(--breeze-window-foreground);
+            border: none !important;
+
+            &:hover {
+                background-color: var(--breeze-nav-hover) !important;
+            }
+
+            &.active {
+                background-color: var(--breeze-nav-active) !important;
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 15px;
+    }
+    
+}
