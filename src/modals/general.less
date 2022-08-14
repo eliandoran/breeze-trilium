@@ -1,6 +1,31 @@
 .modal-dialog {
     .modal-content {
-        border-color: var(--breeze-border) !important;
+        border: none !important;
+    }
+
+    .modal-header {
+        padding: 0 !important;  
+        display: block;
+        position: relative;
+        text-align: center;
+        border: 0;
+        background: var(--breeze-titlebar-active-background);
+        border-top: 1px solid var(--breeze-titlebar-top-border) !important;
+        border-radius: 3px 3px 0 0;
+
+        h5 {
+            font-size: 12px;
+            padding: 5px 0;
+        }
+
+        .close {
+            padding: 0 !important;
+            margin: 0 !important;
+            position: absolute;
+            top: 50%;
+            right: 9px;
+            transform: translateY(-50%);
+        }
     }
 
     .modal-body {
