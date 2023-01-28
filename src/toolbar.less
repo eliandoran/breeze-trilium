@@ -76,10 +76,13 @@ body:focus-within {
 }
 
 #launcher-pane .sync-status {
+    position: absolute;
+    top: 7px !important;
+    right: (32px * 1) + (4px * 1) + 6px;
+
     span.sync-status-icon {
+        .icon-button();
         top: 0 !important;
-        line-height: 31px;
-        width: 32px;
     }
 }
 
@@ -140,7 +143,7 @@ body:focus-within {
 
 #launcher-pane .global-menu-button:before {
     content: "\eb5f";
-    font-size: 24px;
+    font-size: 23px;
 }
 
 #launcher-pane .global-menu-button-update-available {
@@ -162,11 +165,11 @@ body:focus-within {
     top: 7px;    
 
     &.bx-dock-right {
-        right: (32px * 3) + 14px;
+        right: (32px * 2) + 14px;
     }
 
     &.bx-x {
-        right: (32px * 4) + 14px;
+        right: (32px * 3) + 14px;
     }
 }
 
