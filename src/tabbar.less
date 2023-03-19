@@ -36,6 +36,32 @@ div.tab-row-widget:before {
         padding: 0 8px !important;
         line-height: 30px !important;
         font-weight: normal !important;
+
+        .note-tab-close {
+            position: relative;
+            width: 16px;
+            height: 16px;
+            background: var(--breeze-tabbar-close-normal-background);
+            line-height: 1;
+            top: 50%;
+            transform: translateY(-50%);
+        
+            span {
+                color: var(--breeze-tabbar-close-foreground) !important;
+                line-height: 16px;
+                font-size: 18px;
+                color: var(--main-background-color);
+                top: 0 !important;
+            }
+        
+            &:hover {
+                background-color: var(--breeze-tabbar-close-hover-background);
+                
+                span {
+                    color: var(--breeze-tabbar-hover-background) !important;
+                }
+            }
+        }
     }
 
     &:hover .note-tab-wrapper {
@@ -61,35 +87,6 @@ div.tab-row-widget:before {
             border-top-right-radius: 3px;
         }
     }
-}
-
-.tab-row-widget .note-tab .note-tab-wrapper .note-tab-close {
-    position: relative;
-    width: 16px;
-    height: 16px;
-    background: var(--breeze-tabbar-close-normal-background);
-    line-height: 1;
-    top: 50%;
-    transform: translateY(-50%);
-
-    span {
-        color: var(--breeze-tabbar-close-foreground) !important;
-    }
-
-    &:hover {
-        background-color: var(--breeze-tabbar-close-hover-background);
-        
-        span {
-            color: var(--breeze-tabbar-hover-background) !important;
-        }
-    }
-}
-
-.tab-row-widget .note-tab .note-tab-wrapper .note-tab-close span {
-    line-height: 16px;
-    font-size: 18px;
-    color: var(--main-background-color);
-    top: 0 !important;
 }
 
 .note-new-tab {
