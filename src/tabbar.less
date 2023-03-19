@@ -43,20 +43,17 @@ div.tab-row-widget:before {
             height: 16px;
             background: var(--breeze-tabbar-close-normal-background);
             line-height: 1;
+            font-size: 18px;
         
-            span {
+            &::before {
                 color: var(--breeze-tabbar-close-foreground) !important;
-                line-height: 16px;
-                font-size: 18px;
-                color: var(--main-background-color);
-                top: 0 !important;
             }
         
             &:hover {
                 background-color: var(--breeze-tabbar-close-hover-background);
                 
-                span {
-                    color: var(--breeze-tabbar-hover-background) !important;
+                &::before {
+                    color: var(--breeze-tabbar-hover-foreground) !important;
                 }
             }
         }
