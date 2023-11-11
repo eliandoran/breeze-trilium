@@ -177,9 +177,8 @@ body:focus-within {
     }
 }
 
-//!!! This hides all the tooltips that are supposed to be right-aligned.
-// Might cause UX issues if there are any right-aligned tooltips that are
-// not part of the toolbar, but somewhere else.
-.tooltip.bs-tooltip-right.show {
-    display: none !important;
+.tooltip.bs-tooltip-right {
+    position: absolute;
+    left: calc(-4px + calc(-1 * var(--breeze-iconbutton-width))) !important;
+    top: var(--breeze-iconbutton-width) !important;
 }
