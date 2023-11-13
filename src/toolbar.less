@@ -115,6 +115,11 @@ body:focus-within {
         left: 98% !important;   // right: 1px didn't work, this one is close enough.
     }
 
+    &.show > button {
+        border-color: var(--breeze-accent-color) !important;
+        background-color: var(--breeze-toolbutton-active-highlight-background-color) !important;
+    }
+
     .zoom-buttons {
         --button-border-color: var(--breeze-border);
         --button-background-color: var(--breeze-input-background);
