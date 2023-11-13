@@ -106,12 +106,21 @@ body:focus-within {
 
 #launcher-pane .global-menu {
     order: 1000;
-}
-
-#launcher-pane .global-menu {
     width: 32px;
     height: 32px;
     text-align: right;
+
+    .zoom-buttons {
+        --button-border-color: var(--breeze-border);
+        --button-background-color: var(--breeze-input-background);
+        --button-border-radius: 2px;
+        transform: translateY(-1px);
+
+        > a {
+            font-size: 12px;
+            margin: 0 !important;
+        }
+    }
 }
 
 /* Magic selector to find the component between the plugins and protected session/sync */
