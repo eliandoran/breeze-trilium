@@ -126,6 +126,11 @@ body:focus-within {
             margin: 0 !important;
         }
     }
+
+    .dropdown-submenu > .dropdown-menu {
+        left: 0;
+        transform: translateX(calc(-100% - 3px));
+    }
 }
 
 /* Magic selector to find the component between the plugins and protected session/sync */
