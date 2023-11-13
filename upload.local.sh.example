@@ -1,0 +1,5 @@
+# The ETAPI authorization token
+ETAPI_TOKEN=<token goes here>
+
+# The ID of the note which contains the theme
+NOTE_ID=aaaaaaaaaaaa
