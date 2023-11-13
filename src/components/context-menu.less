@@ -1,3 +1,5 @@
+@menu-border-radius: 3px;
+
 :root {
     --menu-text-color: var(--breeze-contextmenu-foreground);
     --menu-background-color: var(--breeze-contextmenu-background);
@@ -10,6 +12,7 @@
 
     padding: 0 !important;
     box-shadow: 0 0 var(--breeze-contextmenu-shadow-radius) var(--breeze-contextmenu-shadow-color) !important;
+    border-radius: @menu-border-radius;
 
     .bx {
         font-size: 11pt;    // Make icons slightly larger, because the icons seem otherwise unbalanced.
@@ -18,7 +21,7 @@
     }
 
     .dropdown-item {
-        border-radius: 3px;
+        border-radius: @menu-border-radius;
         border-color: var(--breeze-toolbutton-active-border-color) !important;
         background: transparent !important;
         border: 1px solid transparent !important;
