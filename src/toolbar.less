@@ -65,8 +65,8 @@ body:focus-within {
     }
 
     @media (min-width: 1120px) {
-        &.bx-send { .text-button("Jump to note"); }
-        &.bx-map-alt { .text-button("Global Note Map"); }
+        &.bx-send { .text-button("Jump to Note"); }
+        &.bx-map-alt { .text-button("Note Map"); }
     }
 
     @media (min-width: 1250px) {
@@ -79,10 +79,10 @@ body:focus-within {
     position: absolute;
     top: 7px !important;
     right: (32px * 1) + (4px * 1) + 6px;
+    .icon-button();
 
     span.sync-status-icon {
-        .icon-button();
-        top: 0 !important;
+        top: 5px;
     }
 }
 
@@ -177,9 +177,8 @@ body:focus-within {
     }
 }
 
-//!!! This hides all the tooltips that are supposed to be right-aligned.
-// Might cause UX issues if there are any right-aligned tooltips that are
-// not part of the toolbar, but somewhere else.
-.tooltip.bs-tooltip-right.show {
-    display: none !important;
+.tooltip.bs-tooltip-right {
+    position: absolute;
+    left: calc(-4px + calc(-1 * var(--breeze-iconbutton-width))) !important;
+    top: var(--breeze-iconbutton-width) !important;
 }
