@@ -2,11 +2,7 @@
 
 Custom theme for Trilium Notes designed to match closely KDE's default theme, KDE Breeze.
 
-It comes in three different flavors:
-
-* Breeze Light.
-* Breeze Dark.
-* Breeze Auto, which uses automatically switches between the two.
+The theme comes with both a light and a dark style, switching automatically based on the desktop preference.
 
 ## Screenshots
 
@@ -31,5 +27,5 @@ It comes in three different flavors:
 3. Simply drag & drop the `Breeze.zip` file onto the "Themes" note in the note tree.
 4. Go to Menu -> Options -> Appearance and:
     * Look for the "Native title bar" option and set it to "enabled".
-    * In the "Theme" section choose any one of the "Breeze" themes.
+    * In the "Theme" section, select the "Breeze" theme.
 5. Restart the application to apply the changes.

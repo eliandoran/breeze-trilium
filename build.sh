@@ -2,20 +2,6 @@
 script_dir=$(dirname "$(realpath $0)")
 output_dir="$script_dir"
 
-function build_theme() {
-    theme=$1
-    output_path="$output_dir/breeze-$theme.css"
-    echo "Building theme "$theme": $output_path"
-    lessc "$script_dir/src/color-scheme/breeze-$theme.less" > "$output_path"
-}
-
-if [ $# -eq 1 ]; then
-    build_theme $1 && \
-        cat "$output_path" | xclip -selection c && \
-        echo "Copied to clipboard."
-    exit 0
-fi
-
-build_theme "light"
-build_theme "dark"
-build_theme "auto"
+output_path="$output_dir/breeze.css"
+echo "Building theme: $output_path"
+lessc "$script_dir/src/color-scheme/breeze-auto.less" > "$output_path"
