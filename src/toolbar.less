@@ -110,6 +110,11 @@ body:focus-within {
     height: 32px;
     text-align: right;
 
+    >ul {
+        top: 33px !important;
+        left: 98% !important;   // right: 1px didn't work, this one is close enough.
+    }
+
     .zoom-buttons {
         --button-border-color: var(--breeze-border);
         --button-background-color: var(--breeze-input-background);
