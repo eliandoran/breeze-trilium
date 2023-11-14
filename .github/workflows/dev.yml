@@ -1,0 +1,23 @@
+name: Development
+on:
+  push:
+
+jobs:
+  build:
+    name: Build theme
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build theme
+        run: npm run build
+
+      - name: Upload theme
+        uses: actions/upload-artifact@v3
+        with:
+          name: Breeze.css
+          path: breeze.css

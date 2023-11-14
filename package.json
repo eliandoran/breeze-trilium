@@ -1,0 +1,23 @@
+{
+  "name": "breeze-trilium",
+  "version": "1.0.0",
+  "description": "Custom theme for Trilium Notes designed to match closely KDE's default theme, KDE Breeze.",
+  "main": "index.js",
+  "scripts": {
+    "build": "lessc src/color-scheme/breeze-auto.less breeze.css"
+  },
+  "keywords": [],
+  "author": "Elian Doran <contact@eliandoran.me>",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliandoran/breeze-trilium.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eliandoran/breeze-trilium/issues"
+  },
+  "homepage": "https://github.com/eliandoran/breeze-trilium#readme",
+  "devDependencies": {
+    "less": "^4.2.0"
+  }
+}
