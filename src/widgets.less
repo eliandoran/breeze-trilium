@@ -51,13 +51,13 @@ select.form-control {
     }
 }
 
-.input-group {
+.textbox-style() {
     border: 1px solid var(--breeze-border) !important;
-    display: flex;
-    align-items: center;
     border-radius: 3px;
     transition: border-color 100ms ease-in-out,
                 background-color 100ms ease-in-out;
+    outline: none !important;
+    box-shadow: none !important;
 
     &:hover {
         border-color: var(--breeze-accent-color) !important;
@@ -67,6 +67,12 @@ select.form-control {
         border-color: var(--breeze-accent-color) !important;
         background-color: var(--breeze-input-background) !important;        
     }
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    .textbox-style();
 
     input {
         flex-grow: 1;
@@ -89,4 +95,8 @@ select.form-control {
             text-decoration: none !important;
         }
     }
+}
+
+.form-group input[type="text"] {
+    .textbox-style();
 }
