@@ -50,3 +50,32 @@ select.form-control {
         border-color: var(--breeze-contextmenu-item-hover-border) !important;
     }
 }
+
+.input-group {
+    border: 1px solid var(--breeze-border) !important;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    transition: border-color 100ms ease-in-out,
+                background-color 100ms ease-in-out;
+
+    &:hover {
+        border-color: var(--breeze-accent-color) !important;
+    }
+
+    &:focus-within {
+        border-color: var(--breeze-accent-color) !important;
+        background-color: var(--breeze-input-background) !important;        
+    }
+
+    input {
+        flex-grow: 1;
+        border: 0 !important;
+        padding: 0 5px;
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+}
