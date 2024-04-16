@@ -28,7 +28,10 @@ select.form-control {
     height: auto !important;
     padding: 3px 1px 4px 1px !important;
     box-sizing: border-box;
-    background: var(--breeze-titlebar-active-background) !important;
+    background: linear-gradient(to bottom,
+        var(--breeze-titlebar-active-background),
+        var(--breeze-titlebar-active-background)),
+        var(--breeze-input-background) !important;
 }
 
 .btn.dropdown-toggle {
