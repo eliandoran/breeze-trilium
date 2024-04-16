@@ -29,3 +29,5 @@ The theme comes with both a light and a dark style, switching automatically base
     * Look for the "Native title bar" option and set it to "enabled".
     * In the "Theme" section, select the "Breeze" theme.
 5. Restart the application to apply the changes.
+
+If that doesn't work, try manually importing the note instead of drag & drop as described in: [#10](https://github.com/eliandoran/breeze-trilium/issues/10#issuecomment-1946719797)
