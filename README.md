@@ -22,7 +22,7 @@ The theme comes with both a light and a dark style, switching automatically base
 
 ## Installation
 
-1. Go to the releases section and download the latest release: [Breeze.zip](https://github.com/eliandoran/breeze-trilium/releases/download/v0.6.0/Breeze.zip).
+1. Go to the releases section and download the latest release: [KDE.Breeze.zip](https://github.com/eliandoran/breeze-trilium/releases/latest/download/KDE.Breeze.zip).
 2. In Trilium Notes, create a note anywhere called "Themes".
 3. Simply drag & drop the `Breeze.zip` file onto the "Themes" note in the note tree.
 4. Go to Menu -> Options -> Appearance and:

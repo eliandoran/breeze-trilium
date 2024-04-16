@@ -51,3 +51,53 @@ select.form-control {
         border-color: var(--breeze-contextmenu-item-hover-border) !important;
     }
 }
+
+.textbox-style() {
+    border: 1px solid var(--breeze-border) !important;
+    border-radius: 3px;
+    transition: border-color 100ms ease-in-out,
+                background-color 100ms ease-in-out;
+    outline: none !important;
+    box-shadow: none !important;
+
+    &:hover {
+        border-color: var(--breeze-accent-color) !important;
+    }
+
+    &:focus-within {
+        border-color: var(--breeze-accent-color) !important;
+        background-color: var(--breeze-input-background) !important;        
+    }
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    .textbox-style();
+
+    input {
+        flex-grow: 1;
+        border: 0 !important;
+        padding: 0 5px;
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    .input-group-append {
+        margin-left: unset !important;
+        padding: 1px;
+
+        .input-group-text {
+            .icon-button(26px);
+            background: unset !important;
+            text-decoration: none !important;
+        }
+    }
+}
+
+.form-group input[type="text"] {
+    .textbox-style();
+}

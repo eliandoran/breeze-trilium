@@ -16,6 +16,10 @@ body:focus-within {
     flex: 0 !important;
     border-left: 1px solid var(--breeze-toolbar-border);
     margin: 6px 4px;
+
+    &+.spacer {
+        display: none !important;
+    }
 }
 
 #launcher-pane .launcher-button,
@@ -100,8 +104,9 @@ body:focus-within {
  * Launcher: Hamburger menu
  * moved to right part of the screen.
  */
-#launcher-pane .button-widget.bx-chevrons-left {
-    display: none;
+#launcher-pane .button-widget.bx-chevrons-left,
+#launcher-pane .button-widget.bx-chevrons-right {
+    order: -1;
 }
 
 #launcher-pane .global-menu {
